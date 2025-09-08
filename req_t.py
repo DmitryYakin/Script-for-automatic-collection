@@ -13,16 +13,16 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.firefox import GeckoDriverManager
-import requests  # Убедитесь, что библиотека установлена (pip install requests)
+import requests  
 
 # Конфигурация Telegram (замените эти значения)
-TELEGRAM_BOT_TOKEN = "7969716964:AAGqiyxi6iEe9E5uxyDWV-zQLAYhLqx0i9E"  # Получить у @BotFather
-TELEGRAM_CHAT_ID = "293265468"  # Узнать через @userinfobot или getUpdates
+TELEGRAM_BOT_TOKEN = ""  # Получить у @BotFather
+TELEGRAM_CHAT_ID = ""  # Узнать через @userinfobot или getUpdates
 
 
 
 
-BASE_URL = "https://cloud.webiomed.ru/#/dhra/requests/"
+BASE_URL = ""
 EXCEL_FILE = "Статистика время открытия СППВР.xlsx"
 SHEET_NAME = "02.06-08.06"
 
@@ -158,3 +158,4 @@ logging.info("Скрипт запущен. Ожидание времени дл�
 while True:
     schedule.run_pending()
     time.sleep(1)
+
